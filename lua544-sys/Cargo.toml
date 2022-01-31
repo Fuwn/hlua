@@ -1,0 +1,15 @@
+[package]
+name = "lua544-sys"
+version = "0.1.0"
+authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>", "Fuwn <contact@fuwn.me>"]
+description = "Bindings for Lua 5.4.4"
+# links = "lua"
+license = "MIT"
+repository = "https://github.com/Fuwn/hlua.git"
+
+[build-dependencies]
+pkg-config = "0.3"
+cc = "1.0"
+
+[dependencies]
+libc = "0.2"

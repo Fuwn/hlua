@@ -1,3 +1,6 @@
 Cargo.lock
 doc/
 target/
+
+# IDE
+.idea/

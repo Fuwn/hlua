@@ -1,8 +1,6 @@
 ## hlua
 
-This library is a high-level binding for Lua 5.2. You don't have access to the Lua stack, all you can do is read/write variables (including callbacks) and execute Lua code.
-
-[![Build Status](https://travis-ci.org/tomaka/hlua.svg?branch=master)](https://travis-ci.org/tomaka/hlua)
+This library is a high-level binding for Lua 5.4.4. You don't have access to the Lua stack, all you can do is read/write variables (including callbacks) and execute Lua code.
 
 ### How to install it?
 
@@ -10,13 +8,12 @@ Add this to the `Cargo.toml` file of your project
 
 ```toml
 [dependencies]
-hlua = "0.3"
+hlua = { git = "https://github.com/Fuwn/hlua.git", version = "0.1.0" }
 ```
 
 ### How to use it?
 
 ```rust
-extern crate hlua;
 use hlua::Lua;
 ```
 
@@ -25,8 +22,6 @@ The `Lua` struct is the main element of this library. It represents a context in
 ```rust
 let mut lua = Lua::new();     // mutable is mandatory
 ```
-
-**[You can check the documentation here](http://docs.rs/hlua)**.
 
 #### Reading and writing variables
 
